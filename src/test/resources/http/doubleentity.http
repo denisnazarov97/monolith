@@ -1,0 +1,47 @@
+GET http://localhost:8080/addClient
+Content-Type: application/json
+
+{
+  "clientName": "Sergey",
+  "email": "messigod@mail.ru",
+  "password": "sadwasda"
+}
+
+###
+
+GET http://localhost:8080/addGame
+Content-Type: application/json
+
+{
+  "name": "aaa"
+}
+
+
+###
+
+GET http://localhost:8080/addReview
+Content-Type: application/json
+
+{ "clientId" : "ffc0d3ae-431a-4281-bce0-1906a2054c69",
+  "reviewsCount": 5000,
+  "gameName": "aaa"
+}
+
+
+###
+
+GET http://localhost:8080/getGameWithReview
+Content-Type: application/json
+
+{
+  "gameName": "aaa"
+}
+###
+
+GET http://localhost:8080/getGameWithOutReview
+Content-Type: application/json
+
+{
+"gameName": "aaa"
+}
+
